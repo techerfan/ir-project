@@ -1,4 +1,4 @@
-module ir-project
+module github.com/techerfan/ir-project
 
 go 1.18
 

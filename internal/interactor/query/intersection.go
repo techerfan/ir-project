@@ -2,7 +2,8 @@ package query
 
 import (
 	"container/list"
-	"ir-project/internal/entity"
+
+	"github.com/techerfan/ir-project/internal/entity"
 )
 
 func (q *Query) intersection(p1, p2 *list.List) *list.List {

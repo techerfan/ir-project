@@ -3,10 +3,11 @@ package tokenizer
 import (
 	"container/list"
 	"io/ioutil"
-	"ir-project/internal/entity"
-	"ir-project/pkg/trimmer"
 	"math"
 	"strings"
+
+	"github.com/techerfan/ir-project/internal/entity"
+	"github.com/techerfan/ir-project/pkg/trimmer"
 )
 
 type Tokenizer struct {

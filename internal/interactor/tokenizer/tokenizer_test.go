@@ -2,9 +2,10 @@ package tokenizer
 
 import (
 	"container/list"
-	"ir-project/internal/entity"
 	"os"
 	"testing"
+
+	"github.com/techerfan/ir-project/internal/entity"
 )
 
 const sampleText1 = `This is a sample text for testing tokenizer package. to be or not to be.`

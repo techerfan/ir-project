@@ -2,11 +2,12 @@ package query
 
 import (
 	"container/list"
-	"ir-project/contracts"
-	"ir-project/internal/entity"
-	"ir-project/pkg/trimmer"
 	"sort"
 	"strings"
+
+	"github.com/techerfan/ir-project/contracts"
+	"github.com/techerfan/ir-project/internal/entity"
+	"github.com/techerfan/ir-project/pkg/trimmer"
 )
 
 type (

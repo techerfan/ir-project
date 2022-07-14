@@ -2,8 +2,9 @@ package query
 
 import (
 	"container/list"
-	"ir-project/internal/entity"
 	"math"
+
+	"github.com/techerfan/ir-project/internal/entity"
 )
 
 type positionalAnswer struct {

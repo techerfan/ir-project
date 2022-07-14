@@ -5,11 +5,12 @@ import (
 	"flag"
 	"fmt"
 	"io/ioutil"
-	"ir-project/contracts"
-	"ir-project/internal/entity"
-	"ir-project/internal/interactor/query"
-	"ir-project/internal/interactor/tokenizer"
 	"path"
+
+	contracts "github.com/techerfan/ir-project/contracts"
+	"github.com/techerfan/ir-project/internal/entity"
+	"github.com/techerfan/ir-project/internal/interactor/query"
+	"github.com/techerfan/ir-project/internal/interactor/tokenizer"
 )
 
 // const sampleText1 = `This is a sample text for testing tokenizer package. to be or not to be.`

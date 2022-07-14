@@ -19,15 +19,15 @@ import (
 func main() {
 
 	pathPtr := flag.String("path", "", "The path of documents.")
-	invertedPtr := flag.Bool("inverted", false, "Bool --Enbales inverted index algorithm.")
+	booleanPtr := flag.Bool("boolean", false, "Bool --Enbales inverted index algorithm.")
 	skipPtr := flag.Bool("skip", false, "Bool -- Enables skip list algorithm. Type the words after the flag.")
 	positionalPtr := flag.Bool("positional", false, "Bool -- Enables positional index algorithm. Type the words after the flag.")
 	phrasePtr := flag.String("phrase", "", "The phrase you want to look for by positional indexing.")
 
 	flag.Parse()
 
-	if (*skipPtr && *invertedPtr) ||
-		(*invertedPtr && *positionalPtr) ||
+	if (*skipPtr && *booleanPtr) ||
+		(*booleanPtr && *positionalPtr) ||
 		(*positionalPtr && *skipPtr) {
 		fmt.Println("You can only select one algotithm at the same time")
 		return
@@ -63,7 +63,7 @@ func main() {
 		q := query.New(t)
 		results := q.Intersect(true, words...)
 		printResult(results, t)
-	} else if *invertedPtr {
+	} else if *booleanPtr {
 		words := flag.Args()
 		if len(words) == 0 {
 			fmt.Println("No word specified")

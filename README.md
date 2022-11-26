@@ -7,7 +7,7 @@ This project inludes three basic algorithms:
 
 ## How it works?
 
-First of all, you need to specfiy a path where your documents are kept. You can do this by using this the below flag:
+First of all, you need to specfiy a path where your documents are kept. You can do this by using the `path` flag:
 ```
 ir-project -path="~/documents/"
 ```
